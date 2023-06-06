@@ -1,0 +1,186 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+ /* ----- navigation and hero part-------*/
+.nav {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(190, 188, 188);
+}
+#logo1{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 25px;
+   padding-left: 10%;
+   padding-right: 10%;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding:10px 20px ;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+}
+nav ul li a:hover {
+    color: rgb(110, 110, 110);
+    transition: .3s;
+    cursor: pointer;
+}
+.nav h1{
+    padding-top: 150px;
+    font-size: 70px;
+}
+span{
+    color: rgb(110, 110, 110);
+}
+#abdf{
+    height: 480px;
+    width: 270px;
+    padding-top: 120px;
+    border: 4px;
+    border-color: black;
+    border-radius: 40px;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* -------- content part----------*/
+.cont{
+    margin: 1%;
+    width: 100%;
+}
+.about {
+   display: flex;
+   align-items: normal;
+   padding: 5% 20%;
+}
+.about h2{
+    padding-bottom: 15px;
+    padding-left: 40%;
+}
+.hedpar{
+
+}
+#abd{
+    height: 75%;
+    width: 75%;
+}
+
+/* ---------Contact-----------*/
+
+.inp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px 50px 10px 10px;
+}
+.contact{
+    padding-top: 3%;
+    padding-left: 35%;
+}
+.contact h1{
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+.contact button{
+    background-color:rgb(110, 110, 110);
+    padding: 10px;
+    border-radius: 30%;
+    margin-left: 100px;
+    font-weight: bold;
+    font-size: larger;
+    color: aliceblue;
+}
+.contact button:hover{
+    color:rgb(0, 0, 0);
+    transition: .3s;
+    cursor: pointer;
+}
+/*------------footer-----------*/
+.footer{
+    
+    width: 100%;
+    background-color: rgb(110, 110, 110);
+}
+.footer #h1{
+    padding-left: 43%;
+    padding-top: 15px;
+    color: aliceblue;
+}
+
+#h31 {
+    color: aliceblue;
+    padding: 2% 0% 2% 38%;
+}
+@media screen and (max-width:768px ){
+    #abd{
+        height: 250%;
+        width: 250%;
+    }
+}
+@media screen and (max-width:426px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+    #abd{
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+    }
+    .contact{
+        padding-left: 7%;
+    }
+    #h31{
+        padding-left: 25%;
+    }
+    #logo1{
+        height: 60px;
+        width: 60px;
+    }
+    nav{
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+    nav ul li{
+        padding: 0% 5px;
+    }
+    .wrap{
+        display: flex;
+        flex-direction:column ;
+    }
+    .nav h1{
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    #abdf{
+        height: 70%;
+        width: 70%;
+        border-radius: 5%;
+        padding-top: 30px;
+    }
+}
